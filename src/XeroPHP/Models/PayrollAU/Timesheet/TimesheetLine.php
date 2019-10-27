@@ -163,4 +163,11 @@ class TimesheetLine extends Remote\Model
 
         return $this;
     }
+
+    public function setNumberOfUnit($collection)
+    {
+        $this->propertyUpdated('NumberOfUnits', $collection);
+        $this->_data['NumberOfUnits'] = $collection;
+        return $this;
+    }
 }
